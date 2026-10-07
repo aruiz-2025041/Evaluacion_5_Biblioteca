@@ -1,7 +1,7 @@
 INSERT INTO usuario (nombre, email, password, estado, rol) VALUES
-('Administrador', 'admin@biblioteca.com', '$2a$10$givjdWSRIeGlUp7CmA96vOIIHOjpfOaMGmCutQX906LP9HSKI8kjm', 'ACTIVO', 'ADMIN'),
-('Bibliotecario', 'biblio@biblioteca.com', '$2a$10$givjdWSRIeGlUp7CmA96vOIIHOjpfOaMGmCutQX906LP9HSKI8kjm', 'ACTIVO', 'BIBLIOTECARIO'),
-('Lector Demo', 'lector@biblioteca.com', '$2a$10$givjdWSRIeGlUp7CmA96vOIIHOjpfOaMGmCutQX906LP9HSKI8kjm', 'ACTIVO', 'LECTOR')
+('Administrador', 'admin@biblioteca.com', '$2a$10$GDU1gnJ4ogJx6nRRlsDzCOlXAZm/xLOJofjEVGyTG/O.Fh.HEd0hK', 'ACTIVO', 'ADMIN'),
+('Bibliotecario', 'biblio@biblioteca.com', '$2a$10$GDU1gnJ4ogJx6nRRlsDzCOlXAZm/xLOJofjEVGyTG/O.Fh.HEd0hK', 'ACTIVO', 'BIBLIOTECARIO'),
+('Lector Demo', 'lector@biblioteca.com', '$2a$10$LTHqU8.wCR/Rn4k1L5aIFe/0nv0L8YMLIax5Ie5wD.HAZrJAt1ySq', 'ACTIVO', 'LECTOR')
 ON CONFLICT (email) DO NOTHING;
 
 INSERT INTO libro (isbn, titulo, autor, categoria, stock_total, stock_disponible) VALUES
